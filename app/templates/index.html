@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12 text-center mb-4">
+        <h1>Welcome to Student Dashboard</h1>
+        <p class="lead">Manage your exams and courses efficiently</p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Quick Links -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Quick Links</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Upcoming Exams</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">My Courses</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Exam Schedule</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upcoming Exams -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Upcoming Exams</h5>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Mathematics</h6>
+                            <small>3 days</small>
+                        </div>
+                        <p class="mb-1">Final Exam</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Physics</h6>
+                            <small>5 days</small>
+                        </div>
+                        <p class="mb-1">Mid-term Exam</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Announcements -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Announcements</h5>
+                <div class="alert alert-info">
+                    <small class="text-muted">Today</small>
+                    <p class="mb-0">New exam schedule posted for finals week</p>
+                </div>
+                <div class="alert alert-warning">
+                    <small class="text-muted">Yesterday</small>
+                    <p class="mb-0">Registration deadline extended for summer courses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
